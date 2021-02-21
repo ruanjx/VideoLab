@@ -5,7 +5,7 @@ High-performance and flexible video editing and effects framework, based on AVFo
 ## Features
 
 - [x] High-performance real-time video editing and exporting.
-- [x] Highly free to combination of video, picture, audio.
+- [x] Highly free to combination of video, image, audio.
 - [x] Support audio pitch setting and volume adjustment.
 - [x] Support for CALayer vector animations. So support complex text animations
 - [x] Support keyframe animation.
