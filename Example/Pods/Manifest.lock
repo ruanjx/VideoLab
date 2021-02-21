@@ -1,0 +1,16 @@
+PODS:
+  - VideoLab (0.0.1)
+
+DEPENDENCIES:
+  - VideoLab (from `../`)
+
+EXTERNAL SOURCES:
+  VideoLab:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VideoLab: b073f9e63b9625b2783d658a543969f559e506c1
+
+PODFILE CHECKSUM: e23437e7691da9acd7c9dd1e1aef814df94c84f6
+
+COCOAPODS: 1.9.3
