@@ -1,9 +1,17 @@
 Pod::Spec.new do |s|
   s.name             = 'VideoLab'
   s.version          = '0.0.1'
-  s.summary          = 'High-performance video editing and effects framework base on AVFoundation and Metal.'
+  s.summary          = 'High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.'
   s.description      = <<-DESC
-  High-performance and flexible video editing and effects framework, based on AVFoundation and Metal. Data structure consistent with After Effects.
+  High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.
+  * High-performance real-time video editing and exporting.
+  * Highly free to combination of video, picture, audio.
+  * Support audio pitch setting and volume adjustment.
+  * Support for CALayer vector animations. So support complex text animations.
+  * Support keyframe animation.
+  * Support for After Effect-like pre-compose.
+  * Support transitions.
+  * Support custom effects. Such as lut filter, zoom blur, etc.
                        DESC
 
   s.homepage         = 'https://github.com/ruanjx/VideoLab'
