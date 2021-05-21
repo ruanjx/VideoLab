@@ -188,6 +188,12 @@ layerGroup1.operations = [zoomblur]
 
 BearRuan, ruanjingxiong@gmail.com
 
+## Architecture
+
+#### Overall Class Diagram
+
+![VideoLab class diagrams](./Docs/Diagrams/VideoLab_class_diagrams.png)
+
 ## License
 
 VideoLab is available under the MIT license. See the LICENSE file for more info.
