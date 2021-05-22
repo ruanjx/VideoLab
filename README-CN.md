@@ -2,16 +2,6 @@
 
 高性能且灵活的视频剪辑与特效框架，基于 AVFoundation 与 Metal。
 
-以下是多 layer demo、文字动画 demo、关键帧动画 demo、预合成 demo 及转场 demo：
-
-<p align="left">
-    <img src="./Document/Resource/multiple-layer-demo.gif" width="240">
-    <img src="./Document/Resource/text-animation-demo.gif" width="240">
-    <img src="./Document/Resource/keyframe-animation-demo.gif" width="240">
-    <img src="./Document/Resource/pre-compose-demo.gif" width="240">
-    <img src="./Document/Resource/transition-demo.gif" width="240">
-</p>
-
 ## 特性
 
 - [x] 高性能实时剪辑与导出。
@@ -22,6 +12,16 @@
 - [x] 支持类似于 After Effect 的预合成。
 - [x] 支持转场。
 - [x] 支持自定义各类特效，如 LUT 滤镜，zoom blur 等等（MSL 编写脚本）。
+
+以下是一些特性的 gif（多图层、文字动画、关键帧动画、预合成及转场）
+ 
+<p align="left">
+    <img src="./Document/Resource/multiple-layer-demo.gif" width="240">
+    <img src="./Document/Resource/text-animation-demo.gif" width="240">
+    <img src="./Document/Resource/keyframe-animation-demo.gif" width="240">
+    <img src="./Document/Resource/pre-compose-demo.gif" width="240">
+    <img src="./Document/Resource/transition-demo.gif" width="240">
+</p>
 
 ## 要求
 
@@ -208,5 +208,5 @@ layerGroup1.operations = [zoomblur]
 
 ## 许可证
 
-VideoLab 使用 MIT 许可，详情请参考 MIT 许可。
+VideoLab 使用 MIT 许可，详情请参考 [LICENSE](./LICENSE) 。
 

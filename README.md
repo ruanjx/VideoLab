@@ -4,17 +4,6 @@
 
 High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.
 
-The following are multiple layer demo, text animation demo, keyframe animation demo, pre compose demo and transition demo:
-
-<p align="left">
-    <img src="./Document/Resource/multiple-layer-demo.gif" width="240">
-    <img src="./Document/Resource/text-animation-demo.gif" width="240">
-    <img src="./Document/Resource/keyframe-animation-demo.gif" width="240">
-    <img src="./Document/Resource/pre-compose-demo.gif" width="240">
-    <img src="./Document/Resource/transition-demo.gif" width="240">
-</p>
-
-
 ## Features
 
 - [x] High-performance real-time video editing and exporting.
@@ -25,6 +14,16 @@ The following are multiple layer demo, text animation demo, keyframe animation d
 - [x] Support After Effect-like pre-compose.
 - [x] Support transitions.
 - [x] Support custom effects. Such as LUT filter, zoom blur, etc.
+
+The following are some GIFs of features(multiple layers, text animation, keyframe animation, pre compose, and transition)
+
+<p align="left">
+    <img src="./Document/Resource/multiple-layer-demo.gif" width="240">
+    <img src="./Document/Resource/text-animation-demo.gif" width="240">
+    <img src="./Document/Resource/keyframe-animation-demo.gif" width="240">
+    <img src="./Document/Resource/pre-compose-demo.gif" width="240">
+    <img src="./Document/Resource/transition-demo.gif" width="240">
+</p>
 
 ## Requirements
 
@@ -210,5 +209,5 @@ BearRuan, ruanjingxiong@gmail.com
 
 ## License
 
-VideoLab is available under the MIT license. See the LICENSE file for more info.
+VideoLab is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
 
