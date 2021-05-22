@@ -1,17 +1,30 @@
 # VideoLab
 
+[README 中文版本](./README-CN.md)
+
 High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.
+
+The following are multiple layer demo, text animation demo, keyframe animation demo, pre compose demo and transition demo:
+
+<p align="left">
+    <img src="./Document/Resource/multiple-layer-demo.gif" width="240">
+    <img src="./Document/Resource/text-animation-demo.gif" width="240">
+    <img src="./Document/Resource/keyframe-animation-demo.gif" width="240">
+    <img src="./Document/Resource/pre-compose-demo.gif" width="240">
+    <img src="./Document/Resource/transition-demo.gif" width="240">
+</p>
+
 
 ## Features
 
 - [x] High-performance real-time video editing and exporting.
-- [x] Highly free to combination of video, image, audio.
+- [x] Highly free combination of video, image, audio.
 - [x] Support audio pitch setting and volume adjustment.
-- [x] Support for CALayer vector animations. So support complex text animations
+- [x] Support CALayer vector animations, so complex text animations are supported.
 - [x] Support keyframe animation.
-- [x] Support for After Effect-like pre-compose.
+- [x] Support After Effect-like pre-compose.
 - [x] Support transitions.
-- [x] Support custom effects. Such as lut filter, zoom blur, etc.
+- [x] Support custom effects. Such as LUT filter, zoom blur, etc.
 
 ## Requirements
 
@@ -38,11 +51,11 @@ end
 
 #### RenderLayer
 
-`RenderLayer` is the most basic unit in the `VideoLab` framework. A video, image, audio can be a `RenderLayer`, or even just an effect can be a `RenderLayer`. `RenderLayer` is more like the concept of layer in After Effect.
+`RenderLayer` is the most basic unit in the `VideoLab` framework. A video, image, audio can be a `RenderLayer`, or even just an effect can be a `RenderLayer`. `RenderLayer` is more like the concept of the layer in After Effect.
 
 #### RenderComposition
 
-`RenderComposition` works as a composite, can set frame rate, canvas size, contains multiple `RenderLayers`, can set `CALayer` to support vector animation
+`RenderComposition` works as a composite, can set frame rate, canvas size, contains multiple `RenderLayers`, can set `CALayer` to support vector animations.
 
 #### VideoLab
 
@@ -115,13 +128,13 @@ renderLayer2.audioConfiguration = audioConfiguration
 
 #### CALayer Animation
 
-For exporting set your customized `CALayer` for composition
+For exporting set your customized `CALayer` for `RenderComposition`
 
 ```swift
 composition.animationLayer = <Your customized CALayer>
 ```
 
-For play back add `AVSynchronizedLayer` to your view's layer, See more detail in **Text Animation Demo**.
+For playback add `AVSynchronizedLayer` to your view's layer, See more detail in **Text Animation Demo**.
 
 #### Keyframe Animation
 
@@ -146,9 +159,8 @@ transform.animations = [animation1, animation2]
 renderLayer1.transform = transform
 ```
 
-1. Set keyTimes
-2. Create `KeyframeAnimation` with `keyPath`, `values`, `keyTimes` and  `timingFunctions`
-3. Set `animations` for `Animatable` object (For example `RenderLayer`, `Transform`)
+1. Create `KeyframeAnimation` with `keyPath`, `values`, `keyTimes` and  `timingFunctions`
+2. Set `animations` for a `struct` or `class` that implements the `Animatable` protocol (e.g. `Transform` struct, `RenderLayer` class)
 
 #### RenderLayerGroup (After Effect-like pre-compose)
 
@@ -162,7 +174,7 @@ layerGroup.layers = [renderLayer1, renderLayer2]
 
 #### Transition
 
-We don't have a transition layer, so instead you can add a transform or operations to each RenderLayer to create a transition. See more detail in **Transition Demo**.
+We don't have a transition layer, so instead, you can add a transform or operations to each RenderLayer to create a transition. See more detail in **Transition Demo**.
 
 #### Custom Effects
 
@@ -184,6 +196,14 @@ layerGroup1.operations = [zoomblur]
 1. Create customize `Operation` inherited from `BasicOperation`. `BasicOperation` also conforms to the `Animatable` protocol
 2. Set `operations` for `RenderLayer`.
 
+## TODO
+
+* Support Open GL render
+* Add speed adjustment for `RenderLayer`.
+* Provide a more convenient way to use transitions, possibly providing `TransitionLayer`.
+* Add log system.
+* Improve the demo and provide UI interactions.
+
 ## Author
 
 BearRuan, ruanjingxiong@gmail.com
@@ -191,5 +211,4 @@ BearRuan, ruanjingxiong@gmail.com
 ## License
 
 VideoLab is available under the MIT license. See the LICENSE file for more info.
-
 
