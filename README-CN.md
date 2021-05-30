@@ -2,6 +2,8 @@
 
 高性能且灵活的视频剪辑与特效框架，基于 AVFoundation 与 Metal。
 
+[框架设计与实现介绍](./Document/README-DETAIL-CN.md)
+
 ## 特性
 
 - [x] 高性能实时剪辑与导出。
