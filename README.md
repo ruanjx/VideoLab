@@ -1,6 +1,7 @@
 # VideoLab
 
-[README 中文版本](./README-CN.md)
+[README 中文版本](./README-CN.md) 
+[框架设计与实现介绍](./Document/README-DETAIL-CN.md)
 
 High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.
 
