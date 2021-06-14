@@ -40,7 +40,7 @@ public class VideoLab {
     
     public func makeExportSession(presetName: String, outputURL: URL) -> AVAssetExportSession? {
         let composition = makeComposition()
-        let exportSession = AVAssetExportSession.init(asset: composition, presetName: presetName)
+        let exportSession = AVAssetExportSession(asset: composition, presetName: presetName)
         let videoComposition = makeVideoComposition()
         videoComposition.animationTool = makeAnimationTool()
         exportSession?.videoComposition = videoComposition
@@ -85,7 +85,6 @@ public class VideoLab {
                 if layer.timeRangeInTimeline.start > timeRange.end {
                     videoTrackID = trackID
                     videoTrackIDInfo[trackID] = layer.timeRangeInTimeline
-                    layer.trackID = trackID
                     break
                 }
             }
@@ -95,7 +94,6 @@ public class VideoLab {
             } else {
                 let videoTrackID = increaseTrackID()
                 videoTrackIDInfo[videoTrackID] = layer.timeRangeInTimeline
-                layer.trackID = videoTrackID
                 return videoTrackID
             }
         }
@@ -127,8 +125,8 @@ public class VideoLab {
         // Substep 3: Add a blank video track for image or effect layers.
         // The track's duration is the same as timeline's duration.
         if let minimumStartTime = minimumStartTime, let maximumEndTime = maximumEndTime {
+            let timeRange = CMTimeRange(start: minimumStartTime, end: maximumEndTime)
             let videoTrackID = increaseTrackID()
-            let timeRange = CMTimeRange.init(start: minimumStartTime, end: maximumEndTime)
             VideoRenderLayer.addBlankVideoTrack(to: composition, in: timeRange, preferredTrackID: videoTrackID)
         }
 
@@ -190,7 +188,7 @@ public class VideoLab {
         for index in 0..<times.count - 1 {
             let startTime = times[index]
             let endTime = times[index + 1]
-            let timeRange = CMTimeRange.init(start: startTime, end: endTime)
+            let timeRange = CMTimeRange(start: startTime, end: endTime)
             var intersectingVideoRenderLayers: [VideoRenderLayer] = []
             videoRenderLayers.forEach { videoRenderLayer in
                 if !videoRenderLayer.timeRangeInTimeline.intersection(timeRange).isEmpty {
@@ -199,7 +197,7 @@ public class VideoLab {
             }
             
             intersectingVideoRenderLayers.sort { $0.renderLayer.layerLevel < $1.renderLayer.layerLevel }
-            let instruction = VideoCompositionInstruction.init(videoRenderLayers: intersectingVideoRenderLayers, timeRange: timeRange)
+            let instruction = VideoCompositionInstruction(videoRenderLayers: intersectingVideoRenderLayers, timeRange: timeRange)
             instructions.append(instruction)
         }
 
@@ -243,8 +241,8 @@ public class VideoLab {
         let parentLayer = CALayer()
         parentLayer.isGeometryFlipped = true
         let videoLayer = CALayer()
-        parentLayer.frame = CGRect.init(origin: CGPoint.zero, size: renderComposition.renderSize)
-        videoLayer.frame = CGRect.init(origin: CGPoint.zero, size: renderComposition.renderSize)
+        parentLayer.frame = CGRect(origin: CGPoint.zero, size: renderComposition.renderSize)
+        videoLayer.frame = CGRect(origin: CGPoint.zero, size: renderComposition.renderSize)
         parentLayer.addSublayer(videoLayer)
         parentLayer.addSublayer(animationLayer)
         

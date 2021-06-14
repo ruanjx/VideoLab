@@ -27,9 +27,9 @@ public class PHAssetVideoSource: Source {
     
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let phAsset = phAsset else {
-            let error = NSError.init(domain: "com.source.load",
-                                     code: 0,
-                                     userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset is nil", comment: "")])
+            let error = NSError(domain: "com.source.load",
+                                code: 0,
+                                userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset is nil", comment: "")])
             completion(error)
             return
         }
@@ -46,9 +46,9 @@ public class PHAssetVideoSource: Source {
             }
 
             guard let asset = asset else {
-                let error = NSError.init(domain: "com.source.load",
-                                         code: 0,
-                                         userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset loaded, but generate nil AVAsset", comment: "")])
+                let error = NSError(domain: "com.source.load",
+                                    code: 0,
+                                    userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset loaded, but generate nil AVAsset", comment: "")])
                 DispatchQueue.main.async {
                     completion(error)
                 }

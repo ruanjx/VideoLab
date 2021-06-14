@@ -19,9 +19,9 @@ public class PHAssetImageSource: ImageSource {
     // MARK: - Source
     override public func load(completion: @escaping (NSError?) -> Void) {
         guard let phAsset = phAsset else {
-            let error = NSError.init(domain: "com.source.load",
-                                     code: 0,
-                                     userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset is nil", comment: "")])
+            let error = NSError(domain: "com.source.load",
+                                code: 0,
+                                userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset is nil", comment: "")])
             completion(error)
             return
         }
@@ -42,9 +42,9 @@ public class PHAssetImageSource: ImageSource {
                 self.texture = Texture.makeTexture(cgImage: cgImage)
                 completion(nil);
             } else {
-                let error = NSError.init(domain: "com.source.load",
-                                         code: 0,
-                                         userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset loaded, but can't find image", comment: "")])
+                let error = NSError(domain: "com.source.load",
+                                    code: 0,
+                                    userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("PHAsset loaded, but can't find image", comment: "")])
                 completion(error)
             }
         }

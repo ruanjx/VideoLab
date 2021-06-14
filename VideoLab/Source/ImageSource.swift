@@ -32,9 +32,9 @@ public class ImageSource: Source {
     
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let cgImage = cgImage else {
-            let error = NSError.init(domain: "com.source.load",
-                                     code: 0,
-                                     userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("Image is nil", comment: "")])
+            let error = NSError(domain: "com.source.load",
+                                code: 0,
+                                userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("Image is nil", comment: "")])
             completion(error)
             isLoaded = true
             return

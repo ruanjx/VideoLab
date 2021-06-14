@@ -25,9 +25,9 @@ public class AVAssetSource: Source {
     
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let asset = asset else {
-            let error = NSError.init(domain: "com.source.load",
-                                     code: 0,
-                                     userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("Asset is nil", comment: "")])
+            let error = NSError(domain: "com.source.load",
+                                code: 0,
+                                userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("Asset is nil", comment: "")])
             completion(error)
             return
         }

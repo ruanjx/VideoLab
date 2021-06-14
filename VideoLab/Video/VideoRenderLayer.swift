@@ -25,6 +25,7 @@ class VideoRenderLayer {
         guard let assetTrack = source.tracks(for: .video).first else {
             return
         }
+        trackID = preferredTrackID
         preferredTransform = assetTrack.preferredTransform
 
         let compositionTrack: AVMutableCompositionTrack? = {
@@ -77,7 +78,7 @@ class VideoRenderLayer {
             return nil
         }
         
-        let resourceBundle = Bundle.init(url: bundleURL)
+        let resourceBundle = Bundle(url: bundleURL)
         guard let videoURL = resourceBundle?.url(forResource: "BlankVideo", withExtension: "mov") else {
             return nil
         }
