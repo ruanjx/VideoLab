@@ -11,7 +11,7 @@ VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，
 * 支持关键帧动画。
 * 支持类似于 AE 的预合成。
 * 支持转场。
-* 支持自定义各类特效，如 LUT 滤镜，zoom blur 等等（MSL 编写脚本）。
+* 支持自定义各类特效，如 LUT 滤镜，Zoom Blur 等等（MSL 编写脚本）。
 
 以下是一些特性的 gif（多图层、文字动画、关键帧动画、预合成及转场）：
 
@@ -42,7 +42,7 @@ VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，
 我们来拆解下步骤：
 
 1. 创建一个或多个 `AVAsset`。
-2. 创建 `AVComposition`、`AVVideoComposition` 及 `AVAudioMix`。其中 `AVComposition` 指定了音视频轨道的时间对齐，`AVVideoComposition` 指定了视频轨道在任何给定的时间点的几何变换与混合，`AVAudioMix` 管理音频轨道的混合参数。
+2. 创建 `AVComposition`、`AVVideoComposition` 及 `AVAudioMix`。其中 `AVComposition` 指定了音视频轨道的时间对齐，`AVVideoComposition` 指定了视频轨道在任何给定时间点的几何变换与混合，`AVAudioMix` 管理音频轨道的混合参数。
 3. 我们可以使用这三个对象来创建 `AVPlayerItem`，并从中创建一个 `AVPlayer` 来播放编辑效果。
 4. 此外，我们也可以使用这三个对象来创建 `AVAssetExportSession`，用来将编辑结果写入文件。
 
@@ -97,7 +97,7 @@ VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，
 
 <img src="./Resource/After-Effects.jpg" width="700">
 
-我们来简单分解下这张示例图：
+我们来分解下这张示例图：
 
 * 在 Project 区域内，有名为 Comp1 类型为 Composition 的一个合成。在 AE 中合成可以认为是一个作品，可以播放导出一个视频。一个合成可以设置宽高值、帧率、背景色等参数。
 * 在 Timeline Control 区域内，包含了两个图层，源分别为 video1.MOV 与 video2.MOV。我们可以自由的设置图层参数，如 Transform（示例还针对 Scale 做了关键帧动画），Audio，也可以在右边区域自由的移动图层的时间区间。此外，我们可以给每个图层添加一组特效。
@@ -124,7 +124,7 @@ VideoLab 是开源的，高性能且灵活的 iOS 视频剪辑与特效框架，
 3. 使用创建的 `RenderComposition` 创建 `VideoLab`。
 4. 使用创建的 `VideoLab` 生成 `AVPlayerItem` 或 `AVAssetExportSession`。
 
-这个章节主要介绍了框架的设计思路。设计思路总的来说，希望框架是类 AE 化的方式设计，灵活且方便。
+这个章节主要介绍了框架的设计思路。设计思路总的来说，希望框架是类 AE 化灵活的方式设计。
 
 ## 框架的实现
 
@@ -161,7 +161,7 @@ public protocol Source {
 
 **1. 将 RenderLayer 转换为 VideoRenderLayer**
 
-`VideoRenderLayer` 是框架内部对象，包含一个 `RenderLayer`，主要负责将 `RenderLayer` 的视频轨道添加到 `AVComposition` 中。可转换为 `VideoRenderLayer` 的 `RenderLayer` 包含以下几类：1. `Source` 包含视频轨道；2. `Source` 为图片类型。3. 特效操作组不为空（`Operations`）。
+`VideoRenderLayer` 是框架内部对象，包含一个 `RenderLayer`，主要负责将 `RenderLayer` 的视频轨道添加到 `AVComposition` 中。可转换为 `VideoRenderLayer` 的 `RenderLayer` 包含以下几类：1. `Source` 包含视频轨道；2. `Source` 为图片类型；3. 特效操作组不为空（`Operations`）。
 
 `VideoRenderLayerGroup` 是 `RenderLayerGroup` 对应视频的框架内部对象，包含一个 `RenderLayerGroup`。可转换为 `VideoRenderLayerGroup` 的 `RenderLayerGroup` 只需满足一个条件：包含的 `RenderLayer` 组有一个可以转化为 `VideoRenderLayer`。
 
@@ -171,15 +171,15 @@ public protocol Source {
 
 **2. 将 VideoRenderLayer 视频轨道添加到 AVComposition 中**
 
-对于 RenderLayer 的 Source 包含视频轨道的 VideoRenderLayer，从 Source 中获取视频 AVAssetTrack，添加到 AVComposition。
+对于 `RenderLayer` 的 `Source` 包含视频轨道的 `VideoRenderLayer`，从 `Source` 中获取视频 `AVAssetTrack`，添加到 `AVComposition`。
 
-对于 RenderLayer 的 Source 为图片类型或仅有特效操作组类型（`Source` 为空）的 VideoRenderLayer，使用空视频添加一个新的视频轨道（这里的空视频是指视频轨道是黑帧且不包含音频轨道的视频）
+对于 `RenderLayer` 的 `Source` 为图片类型或仅有特效操作组类型（`Source` 为空）的 `VideoRenderLayer`，使用空视频添加一个新的视频轨道（这里的空视频是指视频轨道是黑帧且不包含音频轨道的视频）
 
 添加完之后 `AVComposition` 的视频轨道如下图所示：
 
 <img src="./Resource/VideoLab-AVComposition-VideoTrack.png" width="600">
 
-如图所示，VideoRenderLayer1 与 VideoRenderLayer5 共用了一个视频轨道。这是由于苹果对视频轨道数量有限制，我们需要尽量的重用视频轨道（原因是每条视频轨道对应一个解码器，当解码器数量超出系统限制时，会出现无法解码的错误）。
+如图所示，VideoRenderLayer1 与 VideoRenderLayer5 共用了一个视频轨道。这是由于苹果对视频轨道数量有限制，我们需要尽量的重用视频轨道（每条视频轨道对应一个解码器，当解码器数量超出系统限制时，会出现无法解码的错误）。
 
 框架视频轨道重用的原则是，**如果要放入的 VideoRenderLayer 与之前视频轨道的 VideoRenderLayer 在时间上没有交集，则可以重用这个视频轨道，所有视频轨道都重用不了则新增一个视频轨道。**
 
@@ -197,13 +197,13 @@ public protocol Source {
 
 **2. 将 AudioRenderLayer 音频轨道添加到 AVComposition 中**
 
-对于 RenderLayer 的 Source 包含音频轨道的 AudioRenderLayer，从 Source 中获取音频 AVAssetTrack，添加到 AVComposition。
+对于 `RenderLayer` 的 `Source` 包含音频轨道的 AudioRenderLayer，从 `Source` 中获取音频 AVAssetTrack，添加到 AVComposition。
 
 添加完之后 `AVComposition` 的音频轨道如下图所示：
 
 <img src="./Resource/VideoLab-AVComposition-AudioTrack.png" width="600">
 
-如图所示，不同于视频轨道的重用，音频的每个 `AudioRenderLayer` 都对应一个音频轨道。这是由于一个 `AVAudioMixInputParameters` 与一个音频的轨道一一对应，而其音高设置（`audioTimePitchAlgorithm`）不能按区间设置多个值。
+如图所示，不同于视频轨道的重用，音频的每个 `AudioRenderLayer` 都对应一个音频轨道。这是由于一个 `AVAudioMixInputParameters` 与一个音频的轨道一一对应，而其音高设置（`audioTimePitchAlgorithm`）作用于整个音频轨道。如果重用的话，会存在一个音频轨道有多个 `AudioRenderLayer` 的情况，这样会导致所有的 `AudioRenderLayer` 都要配置同样的音高，这显然是不合理的。。
 
 ### AVVideoComposition
 
@@ -244,6 +244,8 @@ videoComposition.customVideoCompositorClass = VideoCompositor.self
     * 当前 `VideoRenderLayer` 的 `Source` 包含视频轨道或 `Source` 为图片类型，拿到纹理处理自己的特效操作组（Operations），接着混合到前面的纹理。
     * 当前 `VideoRenderLayer` 仅特效操作组，所有的操作作用于前面混合的纹理。
 
+渲染混合规则总结来说，**按层级渲染，从下往上。如当前层级有纹理则先处理自己的纹理，再混合进前面的纹理。如当前层级没有纹理，则操作直接作用于前面的纹理。**
+
 让我们将规则用在上图的示例中，假设我们最后输出的纹理为 Output Texture：
 
 1. 处理最底层的 VideoRenderLayerGroup 生成 Texture1，将 Texture1 混合进 Output Texture。
@@ -272,23 +274,23 @@ let audioMix = AVMutableAudioMix()
 audioMix.inputParameters = inputParameters
 ```
 
-以上几个章节从大的维度介绍了框架的实现，对于 Metal 部分的介绍，后续会考虑再起一篇文章介绍。接下来的几个章节，介绍下 VideoLab 框架的后续计划、开发框架过程逆向的一些分享点以及推荐的资料。
+以上几个章节从大的维度介绍了框架的实现，对于 Metal 部分的介绍，后续会考虑再起一篇文章介绍。接下来的几个章节，介绍下框架的后续计划、开发框架过程逆向其他应用的一些分享以及推荐的学习资料。
 
 ## 框架后续计划
 
-* 支持 Open GL 渲染（使用方决定渲染引擎使用 Metal 或 Open GL）
-* 特性持续补充，如变速、更便捷的转场使用方式（可能是提供 TransitionLayer）
-* 提供界面交互的 Demo
+* 支持 Open GL 渲染（使用方决定渲染引擎使用 Metal 或 Open GL）。
+* 特性持续补充，如变速、更便捷的转场使用方式（可能是提供 TransitionLayer）等。
+* 提供界面交互的 Demo。
 
 ## 逆向分享
 
-笔者在开发框架过程中，逆向了国内一众视频编辑器及国外的 Videoleap 等视频编辑器。在比较各自的方案之后，选用了 AVFoundation 加 Metal 的方案作为框架核心。这里简要分享下逆向 Videoleap 的一些亮点：
+笔者在开发框架过程中，逆向了国内外一众视频编辑器。在比较各自的方案之后，选用了 AVFoundation 加 Metal 的方案作为框架核心。这里简要分享下逆向 Videoleap 的一些亮点：
 
-* 尽量少的 Draw Call，尽量将一个层的操作都放在一个 Shader 脚本中（如 Videoleap 中对一个片段的滤镜、透明度调节、曝光、亮度、对比度、包括变换都在一个 Shader 内）。
+* 尽量少的 Draw Call，尽量将一个层的操作都放在一个 Shader 脚本中（如 Videoleap 中对一个视频片段的 YUV 转 RGB、滤镜、变换等都在一个 Shader 内）。
 * 使用 IOSurface 生成纹理性能更优（需要系统大于等于 iOS 11）。
     * Metal 对应方法 `makeTexture(descriptor:iosurface:plane:)`
     * Open GL 对应方法 `texImageIOSurface(_:target:internalFormat:width:height:format:type:plane:)`
-* 尽量多的使用 framebuffer fetch（如果 fragment 只是像素点本身的颜色变化可以使用，如果有参考临近像素点则无法使用）
+* 尽量多的使用 Framebuffer Fetch（如果 fragment 只是像素点本身的颜色变化可以使用，如果有参考临近像素点则无法使用）
     * [Metal 参考资料](https://stackoverflow.com/questions/40968576/read-framebuffer-in-metal-shader)，框架中的 Metal 脚本对应的 [[color(0)]]
     * [Open GL 参考资料](https://developer.apple.com/library/archive/documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/BestPracticesforShaders/BestPracticesforShaders.html#//apple_ref/doc/uid/TP40008793-CH7-SW23#Fetch%20Framebuffer%20Data%20for%20Programmable%20Blending)，搜索 GL_EXT_shader_framebuffer_fetch
 
