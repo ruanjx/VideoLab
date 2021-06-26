@@ -5,6 +5,8 @@
 
 High-performance and flexible video editing and effects framework, based on AVFoundation and Metal.
 
+[Framework design and implementation](./Document/README-DETAIL-EN.md)
+
 ## Features
 
 - [x] High-performance real-time video editing and exporting.
