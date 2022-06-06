@@ -1,7 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'VideoLab_Example' do
   pod 'VideoLab', :path => '../'
+  pod 'LookinServer', :configurations => ['Debug']
 
   target 'VideoLab_Tests' do
     inherit! :search_paths

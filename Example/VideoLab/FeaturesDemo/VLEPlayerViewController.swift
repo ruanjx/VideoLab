@@ -10,7 +10,7 @@ import AVKit
 import Photos
 import VideoLab
 
-class PlayerViewController: AVPlayerViewController {
+class VLEPlayerViewController: AVPlayerViewController {
     var videoLab: VideoLab
     var exportSession: AVAssetExportSession?
     

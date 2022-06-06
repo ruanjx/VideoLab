@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C107FC9284DF99F00629526 /* VLEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FC8284DF99F00629526 /* VLEMainViewController.swift */; };
+		0C107FCC284DFB7200629526 /* VLEDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */; };
 		0DA84D5143A71C45A1A551E6 /* Pods_VideoLab_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C12D39790091FABBA1E2A77 /* Pods_VideoLab_Tests.framework */; };
 		2E2826A72461506F003E4EA8 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2E2826A62461506F003E4EA8 /* video4.MOV */; };
 		2E97F3B0246839680071AC60 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A6246839680071AC60 /* LUT_M01.png */; };
@@ -19,7 +21,7 @@
 		2E97F3B7246839680071AC60 /* LUT_M05.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3AD246839680071AC60 /* LUT_M05.png */; };
 		2E97F3B8246839680071AC60 /* LUT_M08.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3AE246839680071AC60 /* LUT_M08.png */; };
 		2E97F3B9246839680071AC60 /* LUT_M09.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3AF246839680071AC60 /* LUT_M09.png */; };
-		2EC322DC24A71DB9005994AE /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC322DB24A71DB9005994AE /* PlayerViewController.swift */; };
+		2EC322DC24A71DB9005994AE /* VLEPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */; };
 		2EC47FF72452A31D00D1D335 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC47FF42452A31D00D1D335 /* Images.xcassets */; };
 		2EC4800E2452A39400D1D335 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480052452A39300D1D335 /* video3.MOV */; };
 		2EC4800F2452A39400D1D335 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480062452A39400D1D335 /* video1.MOV */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C107FC8284DF99F00629526 /* VLEMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEMainViewController.swift; sourceTree = "<group>"; };
+		0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEDemoViewController.swift; sourceTree = "<group>"; };
 		17730C4D1CE60AFE5DF49FBA /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2826A62461506F003E4EA8 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
 		2E97F3A6246839680071AC60 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
@@ -58,7 +62,7 @@
 		2E97F3AD246839680071AC60 /* LUT_M05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M05.png; sourceTree = "<group>"; };
 		2E97F3AE246839680071AC60 /* LUT_M08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M08.png; sourceTree = "<group>"; };
 		2E97F3AF246839680071AC60 /* LUT_M09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M09.png; sourceTree = "<group>"; };
-		2EC322DB24A71DB9005994AE /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlayerViewController.swift; sourceTree = "<group>"; };
 		2EC47FF42452A31D00D1D335 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2EC480052452A39300D1D335 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video3.MOV; sourceTree = "<group>"; };
 		2EC480062452A39400D1D335 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video1.MOV; sourceTree = "<group>"; };
@@ -105,6 +109,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C107FC6284DF8E500629526 /* FeaturesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */,
+				0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */,
+			);
+			path = FeaturesDemo;
+			sourceTree = "<group>";
+		};
+		0C107FC7284DF8F000629526 /* UIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0C107FCA284DFA1A00629526 /* Controllers */,
+			);
+			path = UIDemo;
+			sourceTree = "<group>";
+		};
+		0C107FCA284DFA1A00629526 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C107FC8284DF99F00629526 /* VLEMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2E87DF622412BD210014D9CC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,9 +212,10 @@
 		607FACD21AFB9204008FA782 /* Example for VideoLab */ = {
 			isa = PBXGroup;
 			children = (
+				0C107FC7284DF8F000629526 /* UIDemo */,
+				0C107FC6284DF8E500629526 /* FeaturesDemo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				2EC322DB24A71DB9005994AE /* PlayerViewController.swift */,
 				2E87DF622412BD210014D9CC /* Resource */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -290,12 +320,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = KYU49KU2MN;
+						DevelopmentTeam = DDY2KRLXQ4;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DDY2KRLXQ4;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
@@ -367,10 +398,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
 				"${BUILT_PRODUCTS_DIR}/VideoLab/VideoLab.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoLab.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,8 +462,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C107FCC284DFB7200629526 /* VLEDemoViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				2EC322DC24A71DB9005994AE /* PlayerViewController.swift in Sources */,
+				2EC322DC24A71DB9005994AE /* VLEPlayerViewController.swift in Sources */,
+				0C107FC9284DF99F00629526 /* VLEMainViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,7 +595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYU49KU2MN;
+				DEVELOPMENT_TEAM = DDY2KRLXQ4;
 				INFOPLIST_FILE = VideoLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -581,7 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KYU49KU2MN;
+				DEVELOPMENT_TEAM = DDY2KRLXQ4;
 				INFOPLIST_FILE = VideoLab/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -602,7 +637,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DDY2KRLXQ4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -630,7 +665,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DDY2KRLXQ4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
