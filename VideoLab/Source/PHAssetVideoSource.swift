@@ -77,4 +77,26 @@ public class PHAssetVideoSource: Source {
         guard let asset = asset else { return [] }
         return asset.tracks(withMediaType: type)
     }
+    
+    public func copy() -> Source {
+        let source = PHAssetVideoSource.init(phAsset: self.phAsset!)
+        source.selectedTimeRange = CMTimeRange.zero
+        source.duration = CMTime.zero
+        source.isLoaded = false
+        return source
+    }
+    
+    public func thumbnails(for times: [NSValue], maximumSize: CGSize, handler: @escaping AVAssetImageGeneratorCompletionHandler) -> Void{
+        guard !times.isEmpty else {
+            return
+        }
+        
+        guard let asset = asset else {
+            return
+        }
+        
+        let imageGenerator = AVAssetImageGenerator.init(asset: asset)
+        imageGenerator.maximumSize = maximumSize
+        imageGenerator.generateCGImagesAsynchronously(forTimes: times, completionHandler: handler)
+    }
 }

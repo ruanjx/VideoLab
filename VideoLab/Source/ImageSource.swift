@@ -22,6 +22,16 @@ public class ImageSource: Source {
         duration = CMTime(seconds: 3, preferredTimescale: 600) // Default duration
         selectedTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: duration)
     }
+    
+    public func copy() -> Source {
+        let source = ImageSource.init()
+        source.isLoaded = false
+        source.cgImage = self.cgImage
+        source.texture = self.texture
+        source.duration = CMTime(seconds: 3, preferredTimescale: 600) // Default duration
+        source.selectedTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: duration)
+        return source
+    }
 
     // MARK: - Source
     public var selectedTimeRange: CMTimeRange

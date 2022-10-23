@@ -23,6 +23,14 @@ public class AVAssetSource: Source {
     
     public var isLoaded: Bool = false
     
+    public func copy() -> Source {
+        let source = AVAssetSource.init(asset: self.asset!)
+        source.selectedTimeRange = CMTimeRange.zero
+        source.duration = CMTime.zero
+        source.isLoaded = false
+        return source
+    }
+    
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let asset = asset else {
             let error = NSError(domain: "com.source.load",

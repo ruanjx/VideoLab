@@ -16,6 +16,12 @@ public class PHAssetImageSource: ImageSource {
         self.phAsset = phAsset
     }
     
+    public override func copy() -> Source {
+        let source = PHAssetImageSource.init(phAsset: self.phAsset!)
+        source.isLoaded = false
+        return source
+    }
+    
     // MARK: - Source
     override public func load(completion: @escaping (NSError?) -> Void) {
         guard let phAsset = phAsset else {
@@ -39,6 +45,9 @@ public class PHAssetImageSource: ImageSource {
             }
             
             if let cgImage = image?.cgImage {
+//                defer {
+                    self.isLoaded = true
+//                }
                 self.texture = Texture.makeTexture(cgImage: cgImage)
                 completion(nil);
             } else {

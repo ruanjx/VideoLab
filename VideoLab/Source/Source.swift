@@ -16,6 +16,8 @@ public protocol Source {
     func load(completion: @escaping (NSError?) -> Void)
     func tracks(for type: AVMediaType) -> [AVAssetTrack]
     func texture(at time: CMTime) -> Texture?
+    
+    func copy() -> Source
 }
 
 extension Source {

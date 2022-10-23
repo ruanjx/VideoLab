@@ -1,14 +1,20 @@
 PODS:
   - LookinServer (1.0.5)
+  - PKHUD (5.3.0)
+  - SnapKit (5.6.0)
   - VideoLab (0.0.1)
 
 DEPENDENCIES:
   - LookinServer
+  - PKHUD (~> 5.0)
+  - SnapKit
   - VideoLab (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - LookinServer
+    - PKHUD
+    - SnapKit
 
 EXTERNAL SOURCES:
   VideoLab:
@@ -16,8 +22,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   LookinServer: 3d9a02529ed94a6a08154440c26f6d7f453bb1e7
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   VideoLab: 1665165e7c258f118b7b37cea7a5597359353ffb
 
-PODFILE CHECKSUM: a47b8300a43c6e8f660a1fd09da948809fdc9b0c
+PODFILE CHECKSUM: 472dcce9a6d5e812619b55163e342d558fbd6045
 
 COCOAPODS: 1.11.3

@@ -10,7 +10,6 @@
 		0C107FC9284DF99F00629526 /* VLEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FC8284DF99F00629526 /* VLEMainViewController.swift */; };
 		0C107FCC284DFB7200629526 /* VLEDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */; };
 		0DA84D5143A71C45A1A551E6 /* Pods_VideoLab_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C12D39790091FABBA1E2A77 /* Pods_VideoLab_Tests.framework */; };
-		2E2826A72461506F003E4EA8 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2E2826A62461506F003E4EA8 /* video4.MOV */; };
 		2E97F3B0246839680071AC60 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A6246839680071AC60 /* LUT_M01.png */; };
 		2E97F3B1246839680071AC60 /* LUT_M02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A7246839680071AC60 /* LUT_M02.png */; };
 		2E97F3B2246839680071AC60 /* LUT_M03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3A8246839680071AC60 /* LUT_M03.png */; };
@@ -23,17 +22,82 @@
 		2E97F3B9246839680071AC60 /* LUT_M09.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E97F3AF246839680071AC60 /* LUT_M09.png */; };
 		2EC322DC24A71DB9005994AE /* VLEPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */; };
 		2EC47FF72452A31D00D1D335 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EC47FF42452A31D00D1D335 /* Images.xcassets */; };
-		2EC4800E2452A39400D1D335 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480052452A39300D1D335 /* video3.MOV */; };
-		2EC4800F2452A39400D1D335 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480062452A39400D1D335 /* video1.MOV */; };
 		2EC480102452A39400D1D335 /* image2.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480072452A39400D1D335 /* image2.HEIC */; };
 		2EC480112452A39400D1D335 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC480092452A39400D1D335 /* LaunchScreen.xib */; };
 		2EC480122452A39400D1D335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4800A2452A39400D1D335 /* Main.storyboard */; };
-		2EC480132452A39400D1D335 /* video2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4800B2452A39400D1D335 /* video2.MOV */; };
 		2EC480142452A39400D1D335 /* image3.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4800C2452A39400D1D335 /* image3.HEIC */; };
 		2EC480152452A39400D1D335 /* image1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2EC4800D2452A39400D1D335 /* image1.JPG */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		642A1CA328D0AC7100B1F482 /* VLEPickerAlbumPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A1CA228D0AC7100B1F482 /* VLEPickerAlbumPhotoCell.swift */; };
+		642A1CA528D0AC7900B1F482 /* VLEPickerAlbumVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A1CA428D0AC7900B1F482 /* VLEPickerAlbumVideoCell.swift */; };
+		642A1CA728D17B9600B1F482 /* VLEPickerFetchAssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A1CA628D17B9600B1F482 /* VLEPickerFetchAssetManager.swift */; };
+		642A1CA928D1B38B00B1F482 /* VLEPickerAssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A1CA828D1B38B00B1F482 /* VLEPickerAssetModel.swift */; };
+		642A1CAB28D1B71700B1F482 /* VLEPickerAlbumListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A1CAA28D1B71700B1F482 /* VLEPickerAlbumListModel.swift */; };
+		642D7F4A28DBF5BD0037EA5B /* VLEExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F4928DBF5BD0037EA5B /* VLEExportViewController.swift */; };
+		642D7F4C28DBF5FC0037EA5B /* VLEExportShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F4B28DBF5FC0037EA5B /* VLEExportShareView.swift */; };
+		642D7F4E28DBF6540037EA5B /* VLEExportConfigResolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F4D28DBF6540037EA5B /* VLEExportConfigResolutionView.swift */; };
+		642D7F5028DBF7000037EA5B /* VLEExportConfigFrameDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F4F28DBF7000037EA5B /* VLEExportConfigFrameDurationView.swift */; };
+		642D7F5228DBF85D0037EA5B /* VLEExportNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F5128DBF85D0037EA5B /* VLEExportNavigatorView.swift */; };
+		642D7F5428DC40950037EA5B /* VLEExportSaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D7F5328DC40950037EA5B /* VLEExportSaveView.swift */; };
+		642E0A2928F45E9500810F20 /* effect_audio_8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1928F45E9400810F20 /* effect_audio_8.m4a */; };
+		642E0A2A28F45E9500810F20 /* effect_audio_14.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1A28F45E9400810F20 /* effect_audio_14.m4a */; };
+		642E0A2B28F45E9500810F20 /* effect_audio_11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1B28F45E9400810F20 /* effect_audio_11.m4a */; };
+		642E0A2C28F45E9500810F20 /* effect_audio_7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1C28F45E9400810F20 /* effect_audio_7.m4a */; };
+		642E0A2D28F45E9500810F20 /* effect_audio_15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1D28F45E9400810F20 /* effect_audio_15.m4a */; };
+		642E0A2E28F45E9500810F20 /* effect_audio_2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1E28F45E9400810F20 /* effect_audio_2.m4a */; };
+		642E0A2F28F45E9500810F20 /* effect_audio_4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A1F28F45E9400810F20 /* effect_audio_4.m4a */; };
+		642E0A3028F45E9500810F20 /* effect_audio_12.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2028F45E9400810F20 /* effect_audio_12.m4a */; };
+		642E0A3128F45E9500810F20 /* effect_audio_13.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2128F45E9400810F20 /* effect_audio_13.m4a */; };
+		642E0A3228F45E9500810F20 /* effect_audio_16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2228F45E9400810F20 /* effect_audio_16.m4a */; };
+		642E0A3328F45E9500810F20 /* effect_audio_9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2328F45E9400810F20 /* effect_audio_9.m4a */; };
+		642E0A3428F45E9500810F20 /* effect_audio_10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2428F45E9400810F20 /* effect_audio_10.m4a */; };
+		642E0A3528F45E9500810F20 /* effect_audio_1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2528F45E9400810F20 /* effect_audio_1.m4a */; };
+		642E0A3628F45E9500810F20 /* effect_audio_5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2628F45E9500810F20 /* effect_audio_5.m4a */; };
+		642E0A3728F45E9500810F20 /* effect_audio_6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2728F45E9500810F20 /* effect_audio_6.m4a */; };
+		642E0A3828F45E9500810F20 /* effect_audio_3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 642E0A2828F45E9500810F20 /* effect_audio_3.m4a */; };
+		6435238228DDAAD3008889AA /* VLEMainMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435238128DDAAD3008889AA /* VLEMainMediator.swift */; };
+		6435238628DE0B91008889AA /* VLETimeLineStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6435238528DE0B91008889AA /* VLETimeLineStateModel.swift */; };
+		64503EB428F035CE00C2BBA8 /* VLETimeLineItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64503EB328F035CE00C2BBA8 /* VLETimeLineItemModel.swift */; };
+		6494E47928F45FA30029F742 /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 6494E47528F45FA30029F742 /* video4.MOV */; };
+		6494E47A28F45FA30029F742 /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 6494E47628F45FA30029F742 /* video3.MOV */; };
+		6494E47B28F45FA30029F742 /* video2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 6494E47728F45FA30029F742 /* video2.MOV */; };
+		6494E47C28F45FA30029F742 /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 6494E47828F45FA30029F742 /* video1.MOV */; };
+		6494E48028F56ABA0029F742 /* VLEPickerStickerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E47F28F56ABA0029F742 /* VLEPickerStickerListModel.swift */; };
+		6494E48228F56AC60029F742 /* VLEPickerAudioListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E48128F56AC60029F742 /* VLEPickerAudioListModel.swift */; };
+		6494E48428F56AE20029F742 /* VLEPickerStickerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E48328F56AE20029F742 /* VLEPickerStickerListView.swift */; };
+		6494E48628F56AF60029F742 /* VLEPickerAudioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E48528F56AF60029F742 /* VLEPickerAudioListView.swift */; };
+		6494E48828F56B1B0029F742 /* VLEPickerAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E48728F56B1B0029F742 /* VLEPickerAudioCell.swift */; };
+		6494E48A28F56B330029F742 /* VLEPickerStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E48928F56B330029F742 /* VLEPickerStickerCell.swift */; };
+		6497DE3D28F2EFDC00512DFA /* VLEEffectIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6497DE3C28F2EFDC00512DFA /* VLEEffectIconView.swift */; };
+		6497DE3F28F2F25A00512DFA /* VLEEffectFirstLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6497DE3E28F2F25A00512DFA /* VLEEffectFirstLevelView.swift */; };
+		6497DE4128F2F44100512DFA /* VLEEffectItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6497DE4028F2F44100512DFA /* VLEEffectItemModel.swift */; };
+		6497DE4328F3D1F500512DFA /* VLETimeLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6497DE4228F3D1F500512DFA /* VLETimeLineConfig.swift */; };
+		6497DE4528F41A0D00512DFA /* VLEPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6497DE4428F41A0D00512DFA /* VLEPlaybackView.swift */; };
+		64A45F7728E5E8CE00701808 /* VLETimeLineDragSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A45F7628E5E8CE00701808 /* VLETimeLineDragSortView.swift */; };
+		64B26BC928CD8BCA00082D7A /* VLEPickerNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B26BC828CD8BCA00082D7A /* VLEPickerNavigatorView.swift */; };
+		64B26BCB28CD8D2000082D7A /* VLEPickerAlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B26BCA28CD8D2000082D7A /* VLEPickerAlbumListView.swift */; };
+		64B26BCD28CD8DEA00082D7A /* VLEPickerAlbumSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B26BCC28CD8DEA00082D7A /* VLEPickerAlbumSwitchView.swift */; };
+		64B26BCF28CD8E1600082D7A /* VLEPickerBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B26BCE28CD8E1600082D7A /* VLEPickerBottomView.swift */; };
+		64BBC3792889377900E03DD2 /* VLETimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBC3782889377900E03DD2 /* VLETimeLineViewController.swift */; };
+		64BBC37B2889386300E03DD2 /* VLEPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBC37A2889386300E03DD2 /* VLEPlaybackViewController.swift */; };
+		64BBC37D2889387600E03DD2 /* VLEPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBC37C2889387600E03DD2 /* VLEPickerViewController.swift */; };
+		64D35D4A28D4AC4E0033895B /* VLETimeLineRenderTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D35D4928D4AC4E0033895B /* VLETimeLineRenderTrackView.swift */; };
+		64D35D4C28D4AC7F0033895B /* VLETimeLineRenderTrackSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D35D4B28D4AC7F0033895B /* VLETimeLineRenderTrackSegmentView.swift */; };
+		64D35D4E28D4ACD00033895B /* VLETimeLineSeparateRenderTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D35D4D28D4ACD00033895B /* VLETimeLineSeparateRenderTrackView.swift */; };
+		64D35D5028D4ADFE0033895B /* VLETimeLineGeneralEffectTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D35D4F28D4ADFE0033895B /* VLETimeLineGeneralEffectTrackView.swift */; };
+		64D35D5228D4B0870033895B /* VLETimeLineTrackLongPressTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D35D5128D4B0870033895B /* VLETimeLineTrackLongPressTipView.swift */; };
+		64D942C128FFA86900C4F546 /* VLEConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D942C028FFA86900C4F546 /* VLEConstants.swift */; };
+		64F4099728BC96AE00062EED /* VLEEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4099628BC96AE00062EED /* VLEEffectViewController.swift */; };
+		64F4099928BCA6AE00062EED /* VLENavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4099828BCA6AE00062EED /* VLENavViewController.swift */; };
+		64F4099C28BCA83F00062EED /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4099B28BCA83F00062EED /* UIColor+Extension.swift */; };
+		64F470EF28F6609C00C8FAC1 /* VLETimeLineRenderTrackDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F470EE28F6609C00C8FAC1 /* VLETimeLineRenderTrackDragView.swift */; };
+		64FADC0828DB3A3E00D93C91 /* VLETimeLineDragSortGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FADC0728DB3A3E00D93C91 /* VLETimeLineDragSortGridView.swift */; };
+		64FADC0A28DB3A5D00D93C91 /* VLETimeLineDragSortMoveItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FADC0928DB3A5D00D93C91 /* VLETimeLineDragSortMoveItemView.swift */; };
+		64FEAFCA28BD9EF700F0A055 /* VLEPlaybackControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFC928BD9EF700F0A055 /* VLEPlaybackControlView.swift */; };
+		64FEAFCF28BE01FF00F0A055 /* VLETimeLineScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFCE28BE01FF00F0A055 /* VLETimeLineScaleView.swift */; };
+		64FEAFD328BE073100F0A055 /* VLETimeLineToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FEAFD228BE073100F0A055 /* VLETimeLineToolBarView.swift */; };
 		6C4D41764043BC22E023E4EB /* Pods_VideoLab_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18E71C233C6CF0CC7C668D4 /* Pods_VideoLab_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +115,6 @@
 		0C107FC8284DF99F00629526 /* VLEMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEMainViewController.swift; sourceTree = "<group>"; };
 		0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEDemoViewController.swift; sourceTree = "<group>"; };
 		17730C4D1CE60AFE5DF49FBA /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2E2826A62461506F003E4EA8 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
 		2E97F3A6246839680071AC60 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
 		2E97F3A7246839680071AC60 /* LUT_M02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M02.png; sourceTree = "<group>"; };
 		2E97F3A8246839680071AC60 /* LUT_M03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M03.png; sourceTree = "<group>"; };
@@ -64,12 +127,9 @@
 		2E97F3AF246839680071AC60 /* LUT_M09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M09.png; sourceTree = "<group>"; };
 		2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlayerViewController.swift; sourceTree = "<group>"; };
 		2EC47FF42452A31D00D1D335 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2EC480052452A39300D1D335 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video3.MOV; sourceTree = "<group>"; };
-		2EC480062452A39400D1D335 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video1.MOV; sourceTree = "<group>"; };
 		2EC480072452A39400D1D335 /* image2.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image2.HEIC; sourceTree = "<group>"; };
 		2EC480092452A39400D1D335 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2EC4800A2452A39400D1D335 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		2EC4800B2452A39400D1D335 /* video2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video2.MOV; sourceTree = "<group>"; };
 		2EC4800C2452A39400D1D335 /* image3.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3.HEIC; sourceTree = "<group>"; };
 		2EC4800D2452A39400D1D335 /* image1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.JPG; sourceTree = "<group>"; };
 		49B85F52A9B716ED3D5F3BCD /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +142,74 @@
 		607FACE51AFB9204008FA782 /* VideoLab_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoLab_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		642A1CA228D0AC7100B1F482 /* VLEPickerAlbumPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAlbumPhotoCell.swift; sourceTree = "<group>"; };
+		642A1CA428D0AC7900B1F482 /* VLEPickerAlbumVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAlbumVideoCell.swift; sourceTree = "<group>"; };
+		642A1CA628D17B9600B1F482 /* VLEPickerFetchAssetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerFetchAssetManager.swift; sourceTree = "<group>"; };
+		642A1CA828D1B38B00B1F482 /* VLEPickerAssetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAssetModel.swift; sourceTree = "<group>"; };
+		642A1CAA28D1B71700B1F482 /* VLEPickerAlbumListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAlbumListModel.swift; sourceTree = "<group>"; };
+		642D7F4928DBF5BD0037EA5B /* VLEExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportViewController.swift; sourceTree = "<group>"; };
+		642D7F4B28DBF5FC0037EA5B /* VLEExportShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportShareView.swift; sourceTree = "<group>"; };
+		642D7F4D28DBF6540037EA5B /* VLEExportConfigResolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportConfigResolutionView.swift; sourceTree = "<group>"; };
+		642D7F4F28DBF7000037EA5B /* VLEExportConfigFrameDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportConfigFrameDurationView.swift; sourceTree = "<group>"; };
+		642D7F5128DBF85D0037EA5B /* VLEExportNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportNavigatorView.swift; sourceTree = "<group>"; };
+		642D7F5328DC40950037EA5B /* VLEExportSaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEExportSaveView.swift; sourceTree = "<group>"; };
+		642E0A1928F45E9400810F20 /* effect_audio_8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_8.m4a; sourceTree = "<group>"; };
+		642E0A1A28F45E9400810F20 /* effect_audio_14.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_14.m4a; sourceTree = "<group>"; };
+		642E0A1B28F45E9400810F20 /* effect_audio_11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_11.m4a; sourceTree = "<group>"; };
+		642E0A1C28F45E9400810F20 /* effect_audio_7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_7.m4a; sourceTree = "<group>"; };
+		642E0A1D28F45E9400810F20 /* effect_audio_15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_15.m4a; sourceTree = "<group>"; };
+		642E0A1E28F45E9400810F20 /* effect_audio_2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_2.m4a; sourceTree = "<group>"; };
+		642E0A1F28F45E9400810F20 /* effect_audio_4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_4.m4a; sourceTree = "<group>"; };
+		642E0A2028F45E9400810F20 /* effect_audio_12.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_12.m4a; sourceTree = "<group>"; };
+		642E0A2128F45E9400810F20 /* effect_audio_13.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_13.m4a; sourceTree = "<group>"; };
+		642E0A2228F45E9400810F20 /* effect_audio_16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_16.m4a; sourceTree = "<group>"; };
+		642E0A2328F45E9400810F20 /* effect_audio_9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_9.m4a; sourceTree = "<group>"; };
+		642E0A2428F45E9400810F20 /* effect_audio_10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_10.m4a; sourceTree = "<group>"; };
+		642E0A2528F45E9400810F20 /* effect_audio_1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_1.m4a; sourceTree = "<group>"; };
+		642E0A2628F45E9500810F20 /* effect_audio_5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_5.m4a; sourceTree = "<group>"; };
+		642E0A2728F45E9500810F20 /* effect_audio_6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_6.m4a; sourceTree = "<group>"; };
+		642E0A2828F45E9500810F20 /* effect_audio_3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = effect_audio_3.m4a; sourceTree = "<group>"; };
+		6435238128DDAAD3008889AA /* VLEMainMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEMainMediator.swift; sourceTree = "<group>"; };
+		6435238528DE0B91008889AA /* VLETimeLineStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineStateModel.swift; sourceTree = "<group>"; };
+		64503EB328F035CE00C2BBA8 /* VLETimeLineItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineItemModel.swift; sourceTree = "<group>"; };
+		6494E47528F45FA30029F742 /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
+		6494E47628F45FA30029F742 /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video3.MOV; sourceTree = "<group>"; };
+		6494E47728F45FA30029F742 /* video2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video2.MOV; sourceTree = "<group>"; };
+		6494E47828F45FA30029F742 /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video1.MOV; sourceTree = "<group>"; };
+		6494E47F28F56ABA0029F742 /* VLEPickerStickerListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerStickerListModel.swift; sourceTree = "<group>"; };
+		6494E48128F56AC60029F742 /* VLEPickerAudioListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAudioListModel.swift; sourceTree = "<group>"; };
+		6494E48328F56AE20029F742 /* VLEPickerStickerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerStickerListView.swift; sourceTree = "<group>"; };
+		6494E48528F56AF60029F742 /* VLEPickerAudioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAudioListView.swift; sourceTree = "<group>"; };
+		6494E48728F56B1B0029F742 /* VLEPickerAudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAudioCell.swift; sourceTree = "<group>"; };
+		6494E48928F56B330029F742 /* VLEPickerStickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerStickerCell.swift; sourceTree = "<group>"; };
+		6497DE3C28F2EFDC00512DFA /* VLEEffectIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEEffectIconView.swift; sourceTree = "<group>"; };
+		6497DE3E28F2F25A00512DFA /* VLEEffectFirstLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEEffectFirstLevelView.swift; sourceTree = "<group>"; };
+		6497DE4028F2F44100512DFA /* VLEEffectItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEEffectItemModel.swift; sourceTree = "<group>"; };
+		6497DE4228F3D1F500512DFA /* VLETimeLineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineConfig.swift; sourceTree = "<group>"; };
+		6497DE4428F41A0D00512DFA /* VLEPlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlaybackView.swift; sourceTree = "<group>"; };
+		64A45F7628E5E8CE00701808 /* VLETimeLineDragSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineDragSortView.swift; sourceTree = "<group>"; };
+		64B26BC828CD8BCA00082D7A /* VLEPickerNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerNavigatorView.swift; sourceTree = "<group>"; };
+		64B26BCA28CD8D2000082D7A /* VLEPickerAlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAlbumListView.swift; sourceTree = "<group>"; };
+		64B26BCC28CD8DEA00082D7A /* VLEPickerAlbumSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerAlbumSwitchView.swift; sourceTree = "<group>"; };
+		64B26BCE28CD8E1600082D7A /* VLEPickerBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerBottomView.swift; sourceTree = "<group>"; };
+		64BBC3782889377900E03DD2 /* VLETimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineViewController.swift; sourceTree = "<group>"; };
+		64BBC37A2889386300E03DD2 /* VLEPlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlaybackViewController.swift; sourceTree = "<group>"; };
+		64BBC37C2889387600E03DD2 /* VLEPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPickerViewController.swift; sourceTree = "<group>"; };
+		64D35D4928D4AC4E0033895B /* VLETimeLineRenderTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineRenderTrackView.swift; sourceTree = "<group>"; };
+		64D35D4B28D4AC7F0033895B /* VLETimeLineRenderTrackSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineRenderTrackSegmentView.swift; sourceTree = "<group>"; };
+		64D35D4D28D4ACD00033895B /* VLETimeLineSeparateRenderTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineSeparateRenderTrackView.swift; sourceTree = "<group>"; };
+		64D35D4F28D4ADFE0033895B /* VLETimeLineGeneralEffectTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineGeneralEffectTrackView.swift; sourceTree = "<group>"; };
+		64D35D5128D4B0870033895B /* VLETimeLineTrackLongPressTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineTrackLongPressTipView.swift; sourceTree = "<group>"; };
+		64D942C028FFA86900C4F546 /* VLEConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEConstants.swift; sourceTree = "<group>"; };
+		64F4099628BC96AE00062EED /* VLEEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEEffectViewController.swift; sourceTree = "<group>"; };
+		64F4099828BCA6AE00062EED /* VLENavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLENavViewController.swift; sourceTree = "<group>"; };
+		64F4099B28BCA83F00062EED /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		64F470EE28F6609C00C8FAC1 /* VLETimeLineRenderTrackDragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineRenderTrackDragView.swift; sourceTree = "<group>"; };
+		64FADC0728DB3A3E00D93C91 /* VLETimeLineDragSortGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineDragSortGridView.swift; sourceTree = "<group>"; };
+		64FADC0928DB3A5D00D93C91 /* VLETimeLineDragSortMoveItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineDragSortMoveItemView.swift; sourceTree = "<group>"; };
+		64FEAFC928BD9EF700F0A055 /* VLEPlaybackControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLEPlaybackControlView.swift; sourceTree = "<group>"; };
+		64FEAFCE28BE01FF00F0A055 /* VLETimeLineScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineScaleView.swift; sourceTree = "<group>"; };
+		64FEAFD228BE073100F0A055 /* VLETimeLineToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLETimeLineToolBarView.swift; sourceTree = "<group>"; };
 		77416D1BC476BAEDB7B8C955 /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7D7C49D12F0278F23194CE27 /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoLab_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A82565B341B1784212B05E3B /* VideoLab.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VideoLab.podspec; path = ../VideoLab.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -112,41 +240,38 @@
 		0C107FC6284DF8E500629526 /* FeaturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				2EC322DB24A71DB9005994AE /* VLEPlayerViewController.swift */,
 				0C107FCB284DFB7200629526 /* VLEDemoViewController.swift */,
 			);
 			path = FeaturesDemo;
 			sourceTree = "<group>";
 		};
-		0C107FC7284DF8F000629526 /* UIDemo */ = {
+		0C107FC7284DF8F000629526 /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0C107FCA284DFA1A00629526 /* Controllers */,
+				64FC5F8528D3282D00C2E94A /* Picker */,
+				64F4099A28BCA7FE00062EED /* Extension */,
+				64F4099528BC968100062EED /* Effect */,
+				64BBC3772888FD0000E03DD2 /* Export */,
+				64BBC3762888F5CB00E03DD2 /* Main */,
+				64BBC3752888F56000E03DD2 /* Playback */,
+				64BBC3742888F55700E03DD2 /* Timeline */,
 			);
-			path = UIDemo;
-			sourceTree = "<group>";
-		};
-		0C107FCA284DFA1A00629526 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0C107FC8284DF99F00629526 /* VLEMainViewController.swift */,
-			);
-			path = Controllers;
+			path = AppDemo;
 			sourceTree = "<group>";
 		};
 		2E87DF622412BD210014D9CC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6494E47428F45FA30029F742 /* Video */,
+				64064D1028F45E5D00D5E503 /* Audio */,
 				2E97F3A5246839680071AC60 /* Filters */,
 				2EC480082452A39400D1D335 /* Storyboard */,
 				2EC47FF42452A31D00D1D335 /* Images.xcassets */,
 				2EC4800D2452A39400D1D335 /* image1.JPG */,
 				2EC480072452A39400D1D335 /* image2.HEIC */,
 				2EC4800C2452A39400D1D335 /* image3.HEIC */,
-				2EC480062452A39400D1D335 /* video1.MOV */,
-				2EC4800B2452A39400D1D335 /* video2.MOV */,
-				2EC480052452A39300D1D335 /* video3.MOV */,
-				2E2826A62461506F003E4EA8 /* video4.MOV */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -212,10 +337,9 @@
 		607FACD21AFB9204008FA782 /* Example for VideoLab */ = {
 			isa = PBXGroup;
 			children = (
-				0C107FC7284DF8F000629526 /* UIDemo */,
+				0C107FC7284DF8F000629526 /* AppDemo */,
 				0C107FC6284DF8E500629526 /* FeaturesDemo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				2E87DF622412BD210014D9CC /* Resource */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -256,6 +380,258 @@
 				4DCAC2D992EEEFE4BD969690 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		64064D1028F45E5D00D5E503 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				642E0A2528F45E9400810F20 /* effect_audio_1.m4a */,
+				642E0A1E28F45E9400810F20 /* effect_audio_2.m4a */,
+				642E0A2828F45E9500810F20 /* effect_audio_3.m4a */,
+				642E0A1F28F45E9400810F20 /* effect_audio_4.m4a */,
+				642E0A2628F45E9500810F20 /* effect_audio_5.m4a */,
+				642E0A2728F45E9500810F20 /* effect_audio_6.m4a */,
+				642E0A1C28F45E9400810F20 /* effect_audio_7.m4a */,
+				642E0A1928F45E9400810F20 /* effect_audio_8.m4a */,
+				642E0A2328F45E9400810F20 /* effect_audio_9.m4a */,
+				642E0A2428F45E9400810F20 /* effect_audio_10.m4a */,
+				642E0A1B28F45E9400810F20 /* effect_audio_11.m4a */,
+				642E0A2028F45E9400810F20 /* effect_audio_12.m4a */,
+				642E0A2128F45E9400810F20 /* effect_audio_13.m4a */,
+				642E0A1A28F45E9400810F20 /* effect_audio_14.m4a */,
+				642E0A1D28F45E9400810F20 /* effect_audio_15.m4a */,
+				642E0A2228F45E9400810F20 /* effect_audio_16.m4a */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		642D7F4628DBF59A0037EA5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				642D7F4928DBF5BD0037EA5B /* VLEExportViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		642D7F4728DBF5A70037EA5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		642D7F4828DBF5AB0037EA5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				642D7F4B28DBF5FC0037EA5B /* VLEExportShareView.swift */,
+				642D7F4D28DBF6540037EA5B /* VLEExportConfigResolutionView.swift */,
+				642D7F4F28DBF7000037EA5B /* VLEExportConfigFrameDurationView.swift */,
+				642D7F5128DBF85D0037EA5B /* VLEExportNavigatorView.swift */,
+				642D7F5328DC40950037EA5B /* VLEExportSaveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6494E47428F45FA30029F742 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				6494E47528F45FA30029F742 /* video4.MOV */,
+				6494E47628F45FA30029F742 /* video3.MOV */,
+				6494E47728F45FA30029F742 /* video2.MOV */,
+				6494E47828F45FA30029F742 /* video1.MOV */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		6497DE3928F2EEBA00512DFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64F4099628BC96AE00062EED /* VLEEffectViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6497DE3A28F2EEC000512DFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6497DE4028F2F44100512DFA /* VLEEffectItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6497DE3B28F2EEC400512DFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6497DE3C28F2EFDC00512DFA /* VLEEffectIconView.swift */,
+				6497DE3E28F2F25A00512DFA /* VLEEffectFirstLevelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64BBC3742888F55700E03DD2 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				64FEAFCD28BE01B000F0A055 /* Controller */,
+				64FEAFCC28BE01AB00F0A055 /* Model */,
+				64FEAFCB28BE01A600F0A055 /* View */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		64BBC3752888F56000E03DD2 /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				64FEAFC828BD9DD300F0A055 /* Model */,
+				64FEAFC728BD9DCD00F0A055 /* Controller */,
+				64FEAFC628BD9DC800F0A055 /* View */,
+			);
+			path = Playback;
+			sourceTree = "<group>";
+		};
+		64BBC3762888F5CB00E03DD2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0C107FC8284DF99F00629526 /* VLEMainViewController.swift */,
+				64F4099828BCA6AE00062EED /* VLENavViewController.swift */,
+				6435238128DDAAD3008889AA /* VLEMainMediator.swift */,
+				64D942C028FFA86900C4F546 /* VLEConstants.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		64BBC3772888FD0000E03DD2 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				642D7F4828DBF5AB0037EA5B /* View */,
+				642D7F4728DBF5A70037EA5B /* Model */,
+				642D7F4628DBF59A0037EA5B /* Controller */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		64F4099528BC968100062EED /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				6497DE3B28F2EEC400512DFA /* View */,
+				6497DE3A28F2EEC000512DFA /* Model */,
+				6497DE3928F2EEBA00512DFA /* Controller */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		64F4099A28BCA7FE00062EED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64F4099B28BCA83F00062EED /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		64FC5F8528D3282D00C2E94A /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				64FEAFDB28C0BC6300F0A055 /* View */,
+				64FEAFDA28C0BC5E00F0A055 /* Model */,
+				64FEAFD928C0BC5400F0A055 /* Controller */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		64FEAFC628BD9DC800F0A055 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64FEAFC928BD9EF700F0A055 /* VLEPlaybackControlView.swift */,
+				6497DE4428F41A0D00512DFA /* VLEPlaybackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64FEAFC728BD9DCD00F0A055 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64BBC37A2889386300E03DD2 /* VLEPlaybackViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64FEAFC828BD9DD300F0A055 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64FEAFCB28BE01A600F0A055 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64FEAFCE28BE01FF00F0A055 /* VLETimeLineScaleView.swift */,
+				64FEAFD228BE073100F0A055 /* VLETimeLineToolBarView.swift */,
+				64D35D4928D4AC4E0033895B /* VLETimeLineRenderTrackView.swift */,
+				64D35D4B28D4AC7F0033895B /* VLETimeLineRenderTrackSegmentView.swift */,
+				64F470EE28F6609C00C8FAC1 /* VLETimeLineRenderTrackDragView.swift */,
+				64D35D4D28D4ACD00033895B /* VLETimeLineSeparateRenderTrackView.swift */,
+				64D35D4F28D4ADFE0033895B /* VLETimeLineGeneralEffectTrackView.swift */,
+				64D35D5128D4B0870033895B /* VLETimeLineTrackLongPressTipView.swift */,
+				64FADC0728DB3A3E00D93C91 /* VLETimeLineDragSortGridView.swift */,
+				64FADC0928DB3A5D00D93C91 /* VLETimeLineDragSortMoveItemView.swift */,
+				64A45F7628E5E8CE00701808 /* VLETimeLineDragSortView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64FEAFCC28BE01AB00F0A055 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6435238528DE0B91008889AA /* VLETimeLineStateModel.swift */,
+				64503EB328F035CE00C2BBA8 /* VLETimeLineItemModel.swift */,
+				6497DE4228F3D1F500512DFA /* VLETimeLineConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64FEAFCD28BE01B000F0A055 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64BBC3782889377900E03DD2 /* VLETimeLineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64FEAFD928C0BC5400F0A055 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64BBC37C2889387600E03DD2 /* VLEPickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64FEAFDA28C0BC5E00F0A055 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				642A1CA628D17B9600B1F482 /* VLEPickerFetchAssetManager.swift */,
+				642A1CA828D1B38B00B1F482 /* VLEPickerAssetModel.swift */,
+				642A1CAA28D1B71700B1F482 /* VLEPickerAlbumListModel.swift */,
+				6494E47F28F56ABA0029F742 /* VLEPickerStickerListModel.swift */,
+				6494E48128F56AC60029F742 /* VLEPickerAudioListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64FEAFDB28C0BC6300F0A055 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64B26BC828CD8BCA00082D7A /* VLEPickerNavigatorView.swift */,
+				64B26BCA28CD8D2000082D7A /* VLEPickerAlbumListView.swift */,
+				64B26BCC28CD8DEA00082D7A /* VLEPickerAlbumSwitchView.swift */,
+				64B26BCE28CD8E1600082D7A /* VLEPickerBottomView.swift */,
+				642A1CA228D0AC7100B1F482 /* VLEPickerAlbumPhotoCell.swift */,
+				642A1CA428D0AC7900B1F482 /* VLEPickerAlbumVideoCell.swift */,
+				6494E48328F56AE20029F742 /* VLEPickerStickerListView.swift */,
+				6494E48928F56B330029F742 /* VLEPickerStickerCell.swift */,
+				6494E48528F56AF60029F742 /* VLEPickerAudioListView.swift */,
+				6494E48728F56B1B0029F742 /* VLEPickerAudioCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6518C543D02EC8A628CA7FA2 /* Frameworks */ = {
@@ -359,24 +735,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC480122452A39400D1D335 /* Main.storyboard in Resources */,
+				642E0A3428F45E9500810F20 /* effect_audio_10.m4a in Resources */,
+				642E0A3628F45E9500810F20 /* effect_audio_5.m4a in Resources */,
+				642E0A2928F45E9500810F20 /* effect_audio_8.m4a in Resources */,
 				2EC480152452A39400D1D335 /* image1.JPG in Resources */,
 				2EC47FF72452A31D00D1D335 /* Images.xcassets in Resources */,
-				2EC480132452A39400D1D335 /* video2.MOV in Resources */,
+				642E0A3828F45E9500810F20 /* effect_audio_3.m4a in Resources */,
+				6494E47928F45FA30029F742 /* video4.MOV in Resources */,
+				642E0A2F28F45E9500810F20 /* effect_audio_4.m4a in Resources */,
+				642E0A2E28F45E9500810F20 /* effect_audio_2.m4a in Resources */,
+				642E0A3028F45E9500810F20 /* effect_audio_12.m4a in Resources */,
 				2E97F3B9246839680071AC60 /* LUT_M09.png in Resources */,
+				642E0A2B28F45E9500810F20 /* effect_audio_11.m4a in Resources */,
 				2E97F3B7246839680071AC60 /* LUT_M05.png in Resources */,
 				2E97F3B4246839680071AC60 /* LUT_M06.png in Resources */,
 				2E97F3B8246839680071AC60 /* LUT_M08.png in Resources */,
+				642E0A2A28F45E9500810F20 /* effect_audio_14.m4a in Resources */,
 				2EC480102452A39400D1D335 /* image2.HEIC in Resources */,
 				2EC480142452A39400D1D335 /* image3.HEIC in Resources */,
-				2E2826A72461506F003E4EA8 /* video4.MOV in Resources */,
+				642E0A3528F45E9500810F20 /* effect_audio_1.m4a in Resources */,
+				642E0A2C28F45E9500810F20 /* effect_audio_7.m4a in Resources */,
+				642E0A3728F45E9500810F20 /* effect_audio_6.m4a in Resources */,
+				6494E47C28F45FA30029F742 /* video1.MOV in Resources */,
 				2E97F3B5246839680071AC60 /* LUT_M12.png in Resources */,
+				642E0A3128F45E9500810F20 /* effect_audio_13.m4a in Resources */,
 				2E97F3B3246839680071AC60 /* LUT_M07.png in Resources */,
+				642E0A3228F45E9500810F20 /* effect_audio_16.m4a in Resources */,
+				642E0A2D28F45E9500810F20 /* effect_audio_15.m4a in Resources */,
 				2E97F3B2246839680071AC60 /* LUT_M03.png in Resources */,
+				6494E47B28F45FA30029F742 /* video2.MOV in Resources */,
+				6494E47A28F45FA30029F742 /* video3.MOV in Resources */,
 				2E97F3B0246839680071AC60 /* LUT_M01.png in Resources */,
-				2EC4800F2452A39400D1D335 /* video1.MOV in Resources */,
+				642E0A3328F45E9500810F20 /* effect_audio_9.m4a in Resources */,
 				2E97F3B1246839680071AC60 /* LUT_M02.png in Resources */,
 				2EC480112452A39400D1D335 /* LaunchScreen.xib in Resources */,
-				2EC4800E2452A39400D1D335 /* video3.MOV in Resources */,
 				2E97F3B6246839680071AC60 /* LUT_M11.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,11 +791,15 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VideoLab_Example/Pods-VideoLab_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/VideoLab/VideoLab.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VideoLab.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,11 +858,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F4099928BCA6AE00062EED /* VLENavViewController.swift in Sources */,
+				642A1CA528D0AC7900B1F482 /* VLEPickerAlbumVideoCell.swift in Sources */,
+				642A1CA728D17B9600B1F482 /* VLEPickerFetchAssetManager.swift in Sources */,
+				6435238628DE0B91008889AA /* VLETimeLineStateModel.swift in Sources */,
+				6497DE3D28F2EFDC00512DFA /* VLEEffectIconView.swift in Sources */,
+				642D7F4C28DBF5FC0037EA5B /* VLEExportShareView.swift in Sources */,
+				64BBC37D2889387600E03DD2 /* VLEPickerViewController.swift in Sources */,
+				6494E48028F56ABA0029F742 /* VLEPickerStickerListModel.swift in Sources */,
 				0C107FCC284DFB7200629526 /* VLEDemoViewController.swift in Sources */,
+				6494E48628F56AF60029F742 /* VLEPickerAudioListView.swift in Sources */,
+				64F4099C28BCA83F00062EED /* UIColor+Extension.swift in Sources */,
+				64D942C128FFA86900C4F546 /* VLEConstants.swift in Sources */,
+				6497DE4128F2F44100512DFA /* VLEEffectItemModel.swift in Sources */,
+				642A1CAB28D1B71700B1F482 /* VLEPickerAlbumListModel.swift in Sources */,
+				64FEAFCA28BD9EF700F0A055 /* VLEPlaybackControlView.swift in Sources */,
+				64FEAFD328BE073100F0A055 /* VLETimeLineToolBarView.swift in Sources */,
+				64BBC37B2889386300E03DD2 /* VLEPlaybackViewController.swift in Sources */,
+				642D7F4E28DBF6540037EA5B /* VLEExportConfigResolutionView.swift in Sources */,
+				6494E48428F56AE20029F742 /* VLEPickerStickerListView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				6494E48828F56B1B0029F742 /* VLEPickerAudioCell.swift in Sources */,
+				6497DE4328F3D1F500512DFA /* VLETimeLineConfig.swift in Sources */,
 				2EC322DC24A71DB9005994AE /* VLEPlayerViewController.swift in Sources */,
 				0C107FC9284DF99F00629526 /* VLEMainViewController.swift in Sources */,
+				642D7F5028DBF7000037EA5B /* VLEExportConfigFrameDurationView.swift in Sources */,
+				64FEAFCF28BE01FF00F0A055 /* VLETimeLineScaleView.swift in Sources */,
+				64FADC0828DB3A3E00D93C91 /* VLETimeLineDragSortGridView.swift in Sources */,
+				64D35D5028D4ADFE0033895B /* VLETimeLineGeneralEffectTrackView.swift in Sources */,
+				64B26BCB28CD8D2000082D7A /* VLEPickerAlbumListView.swift in Sources */,
+				64D35D5228D4B0870033895B /* VLETimeLineTrackLongPressTipView.swift in Sources */,
+				64503EB428F035CE00C2BBA8 /* VLETimeLineItemModel.swift in Sources */,
+				6494E48A28F56B330029F742 /* VLEPickerStickerCell.swift in Sources */,
+				64F470EF28F6609C00C8FAC1 /* VLETimeLineRenderTrackDragView.swift in Sources */,
+				64B26BCF28CD8E1600082D7A /* VLEPickerBottomView.swift in Sources */,
+				64B26BC928CD8BCA00082D7A /* VLEPickerNavigatorView.swift in Sources */,
+				64D35D4A28D4AC4E0033895B /* VLETimeLineRenderTrackView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				642D7F4A28DBF5BD0037EA5B /* VLEExportViewController.swift in Sources */,
+				642A1CA328D0AC7100B1F482 /* VLEPickerAlbumPhotoCell.swift in Sources */,
+				6435238228DDAAD3008889AA /* VLEMainMediator.swift in Sources */,
+				64FADC0A28DB3A5D00D93C91 /* VLETimeLineDragSortMoveItemView.swift in Sources */,
+				64D35D4C28D4AC7F0033895B /* VLETimeLineRenderTrackSegmentView.swift in Sources */,
+				64B26BCD28CD8DEA00082D7A /* VLEPickerAlbumSwitchView.swift in Sources */,
+				64A45F7728E5E8CE00701808 /* VLETimeLineDragSortView.swift in Sources */,
+				64D35D4E28D4ACD00033895B /* VLETimeLineSeparateRenderTrackView.swift in Sources */,
+				6497DE4528F41A0D00512DFA /* VLEPlaybackView.swift in Sources */,
+				642D7F5428DC40950037EA5B /* VLEExportSaveView.swift in Sources */,
+				64F4099728BC96AE00062EED /* VLEEffectViewController.swift in Sources */,
+				642A1CA928D1B38B00B1F482 /* VLEPickerAssetModel.swift in Sources */,
+				6494E48228F56AC60029F742 /* VLEPickerAudioListModel.swift in Sources */,
+				6497DE3F28F2F25A00512DFA /* VLEEffectFirstLevelView.swift in Sources */,
+				642D7F5228DBF85D0037EA5B /* VLEExportNavigatorView.swift in Sources */,
+				64BBC3792889377900E03DD2 /* VLETimeLineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,10 +5,10 @@ use_frameworks!
 target 'VideoLab_Example' do
   pod 'VideoLab', :path => '../'
   pod 'LookinServer', :configurations => ['Debug']
+  pod 'SnapKit'
+  pod 'PKHUD', '~> 5.0'
 
   target 'VideoLab_Tests' do
     inherit! :search_paths
-
-    
   end
 end

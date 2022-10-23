@@ -162,7 +162,7 @@ extension MTLTexture {
         return bytes!
     }
 
-    func toImage() -> CGImage? {
+    public func toImage() -> CGImage? {
         let colorSpace = CGColorSpaceCreateDeviceRGB()
 
         let rawBitmapInfo = CGImageAlphaInfo.noneSkipFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue
