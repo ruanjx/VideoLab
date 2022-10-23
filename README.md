@@ -209,6 +209,7 @@ layerGroup1.operations = [zoomblur]
 ## Author
 
 BearRuan, ruanjingxiong@gmail.com
+Kay, kayyyuan@gmail.com
 
 ## License
 

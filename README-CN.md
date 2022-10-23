@@ -207,6 +207,7 @@ layerGroup1.operations = [zoomblur]
 ## 作者
 
 阮景雄, ruanjingxiong@gmail.com
+员凯, kayyyuan@gmail.com
 
 ## 许可证
 
