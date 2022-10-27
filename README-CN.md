@@ -202,12 +202,11 @@ layerGroup1.operations = [zoomblur]
 * `RenderLayer` 增加速度控制
 * 提供更便捷的方式使用转场，可能是提供 `TransitionLayer`
 * 增加日志系统
-* 增加界面交互的 demo
 
 ## 作者
 
-阮景雄, ruanjingxiong@gmail.com
-员凯, kayyyuan@gmail.com
+* 阮景雄, ruanjingxiong@gmail.com
+* 员凯, kayyyuan@gmail.com
 
 ## 许可证
 

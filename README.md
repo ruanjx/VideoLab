@@ -204,12 +204,11 @@ layerGroup1.operations = [zoomblur]
 * Add speed adjustment for `RenderLayer`.
 * Provide a more convenient way to use transitions, possibly providing `TransitionLayer`.
 * Add log system.
-* Improve the demo and provide UI interactions.
 
 ## Author
 
-BearRuan, ruanjingxiong@gmail.com
-Kay, kayyyuan@gmail.com
+* BearRuan, ruanjingxiong@gmail.com
+* Kay, kayyyuan@gmail.com
 
 ## License
 
