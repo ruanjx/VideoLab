@@ -276,11 +276,25 @@ audioMix.inputParameters = inputParameters
 
 以上几个章节从大的维度介绍了框架的实现，对于 Metal 部分的介绍，后续会考虑再起一篇文章介绍。接下来的几个章节，介绍下框架的后续计划、开发框架过程逆向其他应用的一些分享以及推荐的学习资料。
 
+## Example
+
+VideoLab提供了以下功能的代码演示：
+* Simple
+* Mutil Layer
+* Audio Volume Ramp
+* Text Animation
+* KeyFrame Animation
+* Layer Group
+* Transition
+
+另外还提供了一个具备UI交互的Demo App，因为时间原因，目前只实现了视频剪辑主流程的操作。
+
+git clone仓库工程以后，进入Example文件夹，执行pod install以后，运行工程就可以使用。
+
 ## 后续计划
 
 * 支持 Open GL 渲染（使用方决定渲染引擎使用 Metal 或 Open GL）。
 * 特性持续补充，如变速、更便捷的转场使用方式（可能是提供 TransitionLayer）等。
-* 提供界面交互的 Demo。
 
 ## 逆向分享
 
@@ -320,6 +334,7 @@ audioMix.inputParameters = inputParameters
 
 * 阮景雄，目前就职于 RingCentral，前美拍 iOS 负责人
 * 邮件：ruanjingxiong@gmail.com
+* 员凯，邮件：kayyyuan@gmail.com
 
 
 

@@ -275,11 +275,25 @@ audioMix.inputParameters = inputParameters
 
 The above sections introduce the implementation of the framework, and the Metal part of the introduction will be considered in a subsequent article. The next few sections introduce the follow-up plan of the framework and recommended learning materials.
 
+## Example
+
+VideoLab provides code demonstrations of the following features:
+* Simple
+* Mutil Layer
+* Audio Volume Ramp
+* Text Animation
+* KeyFrame Animation
+* Layer Group
+* Transition
+
+In addition, a Demo App with UI interaction is provided, and due to time reasons, only the operation of the main process of video editing is currently implemented.
+
+After git clone project, enter the Example folder, execute pod install, and run the project to use.
+
 ## Follow up plan
 
 * Open GL rendering support (user decides whether to use Metal or Open GL for the rendering engine).
 * Features continue to be added, such as speed change, easier way to use transitions (possibly by providing TransitionLayer), etc.
-* Improve the demo and provide UI interactions.
 
 ## Recommended learning materials
 
@@ -307,6 +321,7 @@ The above sections introduce the implementation of the framework, and the Metal 
 
 * BearRuan, currently working at RingCentral, ex-iOS Lead at Meipai
 * ruanjingxiong@gmail.com
+* Kay，kayyyuan@gmail.com
 
 
 
